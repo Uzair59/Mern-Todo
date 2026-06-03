@@ -1,0 +1,193 @@
+.auth-wrapper{
+  min-height:100vh;
+  display:flex;
+}
+
+.auth-image{
+  flex:1;
+  background-image:url("https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b");
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.55);
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  color:white;
+  padding:60px;
+}
+
+.overlay h1{
+  font-size:52px;
+  margin-bottom:15px;
+}
+
+.overlay p{
+  font-size:18px;
+  max-width:450px;
+}
+
+.auth-card{
+  width:450px;
+  background:white;
+  padding:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:18px;
+}
+
+.auth-card h1{
+  font-size:34px;
+}
+
+.auth-card p{
+  color:#777;
+}
+
+.auth-card input{
+  height:55px;
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:0 15px;
+}
+
+.auth-card button{
+  height:55px;
+  border-radius:12px;
+  background:#111827;
+  color:white;
+  cursor:pointer;
+}
+
+.auth-card span{
+  text-align:center;
+}
+
+.auth-card a{
+  margin-left:5px;
+}
+
+@media(max-width:900px){
+
+  .auth-image{
+    display:none;
+  }
+
+  .auth-card{
+    width:100%;
+    max-width:500px;
+    margin:auto;
+  }
+}
+.dashboard{
+  min-height:100vh;
+  background:#f4f7fb;
+}
+
+/* Navbar */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px 40px;
+  background:white;
+
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.nav-right{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.nav-right button{
+  padding:10px 18px;
+  background:#ef4444;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* Container */
+.container{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  gap:20px;
+
+  padding:30px;
+}
+
+/* Form */
+.todo-form{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+
+  height:fit-content;
+}
+
+.todo-form input{
+  height:45px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  padding:0 10px;
+}
+
+.todo-form button{
+  height:45px;
+  background:#111827;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* Todo list */
+.todo-list{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+}
+
+.todo-card{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:15px;
+  border:1px solid #eee;
+  border-radius:10px;
+  margin-bottom:10px;
+
+  background:#fafafa;
+}
+
+.todo-card h4{
+  margin-bottom:5px;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+.actions button{
+  padding:8px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  background:#111827;
+  color:white;
+}
